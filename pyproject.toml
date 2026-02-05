@@ -1,0 +1,159 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gliner2-onnx"
+dynamic = ["version"]
+description = "GLiNER2 ONNX runtime for NER and classification without PyTorch"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "lmoe" }]
+keywords = ["ner", "named-entity-recognition", "gliner", "onnx", "nlp", "zero-shot"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    "onnxruntime>=1.18.0",
+    "transformers>=4.40.0",
+    "numpy>=1.26.0",
+    "huggingface-hub>=0.23.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/lmoe/gliner2-onnx"
+Repository = "https://github.com/lmoe/gliner2-onnx"
+Issues = "https://github.com/lmoe/gliner2-onnx/issues"
+
+[project.optional-dependencies]
+# For exporting models (not needed for inference)
+export = [
+    "gliner2>=1.2.4",
+    "torch>=2.0.0",
+    "onnx>=1.14.0,<1.18",
+    "onnxscript>=0.6.0",
+    "onnxconverter-common>=1.14.0",
+    "urllib3>=2.6.3",
+    "requests>=2.32.5"
+]
+test = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["gliner2_onnx"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "gliner2_onnx/_version.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/gliner2_onnx/**/*.py",
+    "/README.md",
+    "/pyproject.toml",
+]
+exclude = [
+    "/.gitignore",
+]
+
+[dependency-groups]
+dev = ["ruff", "mypy"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 160
+exclude = ["gliner2_onnx/_version.py"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+    "ARG",    # flake8-unused-arguments
+    "SIM",    # flake8-simplify
+    "TCH",    # flake8-type-checking
+    "PTH",    # flake8-use-pathlib
+    "PL",     # pylint
+    "RUF",    # ruff-specific
+    "PERF",   # perflint
+    "S",      # bandit security
+    "A",      # shadowing builtins
+    "T20",    # print statements
+    "ERA",    # commented-out code
+    "TRY",    # exception handling
+    "RET",    # return statements
+    "SLF",    # private member access
+    "FBT",    # boolean trap
+    "G",      # logging format
+    "PIE",    # misc checks
+    "FLY",    # f-strings
+]
+ignore = [
+    "PLR0913",  # too many arguments
+    "PLR2004",  # magic value comparison
+    "PLR0911",  # too many return statements
+    "PLR0915",  # too many statements
+    "PLC0415",  # import outside top-level
+    "S101",     # assert used
+    "TRY003",   # long exception messages
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["gliner2_onnx"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["T201"]
+"tools/*" = ["T201"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+exclude = ["gliner2_onnx/_version\\.py$"]
+warn_return_any = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_any_explicit = true
+disallow_any_generics = true
+strict_equality = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = [
+    "onnxruntime.*",
+    "onnx.*",
+    "onnxscript.*",
+    "onnxconverter_common.*",
+    "transformers.*",
+    "gliner2.*",
+    "torch.*",
+    "huggingface_hub.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "gliner2_onnx.runtime"
+# ONNX runtime returns untyped data, numpy arrays have complex typing
+disallow_any_explicit = false
+
+[[tool.mypy.overrides]]
+module = ["tools.export_model", "tools.export_count_embed"]
+# torch.nn.Module is typed as Any, causing cascading type errors
+disallow_any_explicit = false
+disable_error_code = ["misc", "no-any-return", "arg-type", "operator", "union-attr", "index"]

@@ -1,0 +1,10 @@
+model_out
+.venv
+.ruff_cache
+.mypy_cache
+__pycache__
+.vscode
+py.typed
+dist
+.pytest_cache
+_version.py

@@ -1,0 +1,6994 @@
+{
+  "gliner_small-v2.1": {
+    "ner": [
+      {
+        "text": "John Smith works at Microsoft in Seattle.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John Smith",
+            "label": "person",
+            "score": 0.9856808185577393,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9837138652801514,
+            "start": 20,
+            "end": 29
+          },
+          {
+            "text": "Seattle",
+            "label": "location",
+            "score": 0.9742408394813538,
+            "start": 33,
+            "end": 40
+          }
+        ]
+      },
+      {
+        "text": "Elon Musk announced new Tesla features.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Elon Musk",
+            "label": "person",
+            "score": 0.9925224184989929,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.9127621054649353,
+            "start": 24,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Dr. Sarah Johnson joined Harvard University.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Sarah Johnson",
+            "label": "person",
+            "score": 0.9654815793037415,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "Harvard University",
+            "label": "organization",
+            "score": 0.9508531093597412,
+            "start": 25,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Tim Cook presented at Apple's keynote.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tim Cook",
+            "label": "person",
+            "score": 0.9927040338516235,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9488062858581543,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Mark Zuckerberg founded Facebook in 2004.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Mark Zuckerberg",
+            "label": "person",
+            "score": 0.990728497505188,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Facebook",
+            "label": "organization",
+            "score": 0.9668614864349365,
+            "start": 24,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Jeff Bezos stepped down from Amazon.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Jeff Bezos",
+            "label": "person",
+            "score": 0.9918217062950134,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9732311367988586,
+            "start": 29,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Sundar Pichai leads Google.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sundar Pichai",
+            "label": "person",
+            "score": 0.9824339747428894,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9748920798301697,
+            "start": 20,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "text": "Warren Buffett invested in Coca-Cola.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Warren Buffett",
+            "label": "person",
+            "score": 0.9789135456085205,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "Coca-Cola",
+            "label": "organization",
+            "score": 0.953420877456665,
+            "start": 27,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Bill Gates donated to the WHO.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Bill Gates",
+            "label": "person",
+            "score": 0.9828752279281616,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "WHO",
+            "label": "organization",
+            "score": 0.9666497707366943,
+            "start": 26,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Satya Nadella transformed Microsoft.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Satya Nadella",
+            "label": "person",
+            "score": 0.9897900223731995,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9858585000038147,
+            "start": 26,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "The conference is in New York City.",
+        "labels": [
+          "location",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The conference",
+            "label": "event",
+            "score": 0.6331239938735962,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "New York City",
+            "label": "location",
+            "score": 0.9398356080055237,
+            "start": 21,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Flight from London to Tokyo.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9277390241622925,
+            "start": 12,
+            "end": 18
+          },
+          {
+            "text": "Tokyo",
+            "label": "location",
+            "score": 0.9312527179718018,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Meeting at the Paris office.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Paris office",
+            "label": "location",
+            "score": 0.8183862566947937,
+            "start": 15,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Vacation in the Bahamas.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Bahamas",
+            "label": "location",
+            "score": 0.8086293935775757,
+            "start": 16,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Headquarters moved to San Francisco.",
+        "labels": [
+          "location",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Headquarters",
+            "label": "organization",
+            "score": 0.7509735822677612,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "San Francisco",
+            "label": "location",
+            "score": 0.945219099521637,
+            "start": 22,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Born in Chicago, raised in Boston.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chicago",
+            "label": "location",
+            "score": 0.9274128675460815,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "text": "Boston",
+            "label": "location",
+            "score": 0.9310603737831116,
+            "start": 27,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "The restaurant is on 5th Avenue.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "5th Avenue",
+            "label": "location",
+            "score": 0.9183900952339172,
+            "start": 21,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Traveling through Germany and France.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Germany",
+            "label": "location",
+            "score": 0.6347269415855408,
+            "start": 18,
+            "end": 25
+          },
+          {
+            "text": "France",
+            "label": "location",
+            "score": 0.7170391082763672,
+            "start": 30,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "The beach in Miami is beautiful.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Miami",
+            "label": "location",
+            "score": 0.853858470916748,
+            "start": 13,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Office located in downtown Manhattan.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "downtown Manhattan",
+            "label": "location",
+            "score": 0.8863766193389893,
+            "start": 18,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Buy iPhone and MacBook from Apple Store.",
+        "labels": [
+          "item",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "iPhone",
+            "label": "item",
+            "score": 0.8141434788703918,
+            "start": 4,
+            "end": 10
+          },
+          {
+            "text": "MacBook",
+            "label": "item",
+            "score": 0.8496712446212769,
+            "start": 15,
+            "end": 22
+          },
+          {
+            "text": "Apple Store",
+            "label": "location",
+            "score": 0.6082944273948669,
+            "start": 28,
+            "end": 39
+          }
+        ]
+      },
+      {
+        "text": "The Tesla Model 3 is on sale.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tesla Model 3",
+            "label": "item",
+            "score": 0.8918464779853821,
+            "start": 4,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Order PlayStation 5 from Amazon.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "PlayStation 5",
+            "label": "item",
+            "score": 0.9350200295448303,
+            "start": 6,
+            "end": 19
+          },
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.8650681376457214,
+            "start": 25,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Install Windows 11 on the laptop.",
+        "labels": [
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": []
+      },
+      {
+        "text": "The new Nike Air Max shoes.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The new Nike Air Max shoes",
+            "label": "item",
+            "score": 0.6074533462524414,
+            "start": 0,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "text": "Samsung Galaxy S24 review.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Samsung Galaxy S24",
+            "label": "item",
+            "score": 0.8447771072387695,
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Bought a Rolex watch.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Rolex watch",
+            "label": "item",
+            "score": 0.6987844705581665,
+            "start": 9,
+            "end": 20
+          }
+        ]
+      },
+      {
+        "text": "The IKEA furniture arrived.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "IKEA",
+            "label": "organization",
+            "score": 0.8065835237503052,
+            "start": 4,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "text": "Using Adobe Photoshop for editing.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": []
+      },
+      {
+        "text": "The Sony headphones are great.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sony headphones",
+            "label": "item",
+            "score": 0.7966537475585938,
+            "start": 4,
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "I met Sarah at Starbucks in New York.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sarah",
+            "label": "person",
+            "score": 0.9658262729644775,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.9348869919776917,
+            "start": 15,
+            "end": 24
+          },
+          {
+            "text": "New York",
+            "label": "location",
+            "score": 0.9507074356079102,
+            "start": 28,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Tom and Mary had dinner at the Italian restaurant in London.",
+        "labels": [
+          "person",
+          "restaurant",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tom and Mary",
+            "label": "person",
+            "score": 0.8919835090637207,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Italian restaurant",
+            "label": "restaurant",
+            "score": 0.9019525647163391,
+            "start": 31,
+            "end": 49
+          },
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9565961956977844,
+            "start": 53,
+            "end": 59
+          }
+        ]
+      },
+      {
+        "text": "Dr. Johnson prescribed medication at General Hospital.",
+        "labels": [
+          "person",
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Johnson",
+            "label": "person",
+            "score": 0.9719210863113403,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "General Hospital",
+            "label": "organization",
+            "score": 0.9318123459815979,
+            "start": 37,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "CEO Lisa Su announced AMD's new chip.",
+        "labels": [
+          "person",
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Lisa Su",
+            "label": "person",
+            "score": 0.9617153406143188,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "text": "AMD",
+            "label": "organization",
+            "score": 0.972205400466919,
+            "start": 22,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Professor Zhang teaches at Stanford in California.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Professor Zhang",
+            "label": "person",
+            "score": 0.9735528230667114,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Stanford",
+            "label": "organization",
+            "score": 0.8642791509628296,
+            "start": 27,
+            "end": 35
+          },
+          {
+            "text": "California",
+            "label": "location",
+            "score": 0.9498230218887329,
+            "start": 39,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "text": "Chef Gordon Ramsay opened a restaurant in Las Vegas.",
+        "labels": [
+          "person",
+          "restaurant",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chef Gordon Ramsay",
+            "label": "person",
+            "score": 0.8201468586921692,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9628979563713074,
+            "start": 42,
+            "end": 51
+          }
+        ]
+      },
+      {
+        "text": "Athlete LeBron James signed with the Lakers.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "LeBron James",
+            "label": "person",
+            "score": 0.9761003255844116,
+            "start": 8,
+            "end": 20
+          },
+          {
+            "text": "Lakers",
+            "label": "organization",
+            "score": 0.9572310447692871,
+            "start": 37,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Author Stephen King lives in Maine.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Stephen King",
+            "label": "person",
+            "score": 0.9434982538223267,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "text": "Maine",
+            "label": "location",
+            "score": 0.9610342979431152,
+            "start": 29,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Singer Taylor Swift performed in Nashville.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Taylor Swift",
+            "label": "person",
+            "score": 0.9658791422843933,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "text": "Nashville",
+            "label": "location",
+            "score": 0.9502934217453003,
+            "start": 33,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "text": "Director Christopher Nolan filmed in Iceland.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Christopher Nolan",
+            "label": "person",
+            "score": 0.8691307902336121,
+            "start": 9,
+            "end": 26
+          },
+          {
+            "text": "Iceland",
+            "label": "location",
+            "score": 0.9234713912010193,
+            "start": 37,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "text": "Order sushi from Nobu restaurant.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "sushi",
+            "label": "food",
+            "score": 0.8804950714111328,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "text": "Nobu restaurant",
+            "label": "restaurant",
+            "score": 0.918312668800354,
+            "start": 17,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "The pasta at Olive Garden was delicious.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "pasta",
+            "label": "food",
+            "score": 0.798287034034729,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "text": "Olive Garden",
+            "label": "restaurant",
+            "score": 0.9675471782684326,
+            "start": 13,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Buy fresh salmon at Whole Foods.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "salmon",
+            "label": "food",
+            "score": 0.8406173586845398,
+            "start": 10,
+            "end": 16
+          },
+          {
+            "text": "Whole Foods",
+            "label": "organization",
+            "score": 0.9067946076393127,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Try the burgers at Five Guys.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "burgers",
+            "label": "food",
+            "score": 0.8075017929077148,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "text": "Five Guys",
+            "label": "restaurant",
+            "score": 0.9863765835762024,
+            "start": 19,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "The pizza from Domino's arrived.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "pizza",
+            "label": "food",
+            "score": 0.8458279967308044,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "text": "Domino's",
+            "label": "restaurant",
+            "score": 0.9049486517906189,
+            "start": 15,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Coffee from Starbucks every morning.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Coffee",
+            "label": "food",
+            "score": 0.7449125051498413,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.7903355956077576,
+            "start": 12,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Tacos at Chipotle for lunch.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tacos",
+            "label": "food",
+            "score": 0.8533207178115845,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Chipotle",
+            "label": "restaurant",
+            "score": 0.9681564569473267,
+            "start": 9,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Ice cream from Ben & Jerry's.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Ice cream",
+            "label": "food",
+            "score": 0.896150529384613,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Ben & Jerry",
+            "label": "organization",
+            "score": 0.7910589575767517,
+            "start": 15,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "text": "Chicken sandwich at Chick-fil-A.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chicken sandwich",
+            "label": "food",
+            "score": 0.8816218376159668,
+            "start": 0,
+            "end": 16
+          },
+          {
+            "text": "Chick-fil-A",
+            "label": "restaurant",
+            "score": 0.9719688296318054,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Breakfast at IHOP.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Breakfast",
+            "label": "food",
+            "score": 0.5004533529281616,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "IHOP",
+            "label": "restaurant",
+            "score": 0.9688339233398438,
+            "start": 13,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "The Olympics will be in Los Angeles.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The Olympics",
+            "label": "event",
+            "score": 0.9006788730621338,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.943347156047821,
+            "start": 24,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Super Bowl LVIII in Las Vegas.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Super Bowl LVIII",
+            "label": "event",
+            "score": 0.8816843628883362,
+            "start": 0,
+            "end": 16
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9421463012695312,
+            "start": 20,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Coachella festival in California.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Coachella festival",
+            "label": "event",
+            "score": 0.8270679116249084,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "California",
+            "label": "location",
+            "score": 0.9227171540260315,
+            "start": 22,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Comic-Con in San Diego.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Comic-Con",
+            "label": "event",
+            "score": 0.8797879219055176,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "San Diego",
+            "label": "location",
+            "score": 0.9415916800498962,
+            "start": 13,
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "The World Cup final in Qatar.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The World Cup final",
+            "label": "event",
+            "score": 0.8296754360198975,
+            "start": 0,
+            "end": 19
+          },
+          {
+            "text": "Qatar",
+            "label": "location",
+            "score": 0.9034067988395691,
+            "start": 23,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "Grammy Awards in Los Angeles.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Grammy Awards",
+            "label": "event",
+            "score": 0.9165037870407104,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9353576302528381,
+            "start": 17,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "SXSW conference in Austin.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "SXSW",
+            "label": "event",
+            "score": 0.8818848729133606,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "text": "Austin",
+            "label": "location",
+            "score": 0.9479557275772095,
+            "start": 19,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "CES in Las Vegas.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "CES",
+            "label": "event",
+            "score": 0.9069455862045288,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9161407351493835,
+            "start": 7,
+            "end": 16
+          }
+        ]
+      },
+      {
+        "text": "Fashion Week in Milan.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Fashion Week",
+            "label": "event",
+            "score": 0.8893291354179382,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Milan",
+            "label": "location",
+            "score": 0.9212349653244019,
+            "start": 16,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Oktoberfest in Munich.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Oktoberfest",
+            "label": "event",
+            "score": 0.9317115545272827,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "Munich",
+            "label": "location",
+            "score": 0.9162914752960205,
+            "start": 15,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Michael Jordan played for the Chicago Bulls.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Michael Jordan",
+            "label": "person",
+            "score": 0.9904084205627441,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "Chicago Bulls",
+            "label": "organization",
+            "score": 0.950055718421936,
+            "start": 30,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Lionel Messi joined Inter Miami.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Lionel Messi",
+            "label": "person",
+            "score": 0.990723192691803,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Inter Miami",
+            "label": "organization",
+            "score": 0.9697214961051941,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Serena Williams won at Wimbledon.",
+        "labels": [
+          "person",
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Serena Williams",
+            "label": "person",
+            "score": 0.9850082397460938,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Wimbledon",
+            "label": "event",
+            "score": 0.7484354376792908,
+            "start": 23,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Tom Brady retired from the NFL.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tom Brady",
+            "label": "person",
+            "score": 0.9920094013214111,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "NFL",
+            "label": "organization",
+            "score": 0.9671375751495361,
+            "start": 27,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Cristiano Ronaldo signed with Al-Nassr.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Cristiano Ronaldo",
+            "label": "person",
+            "score": 0.9917200803756714,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "Al-Nassr",
+            "label": "organization",
+            "score": 0.9046221375465393,
+            "start": 30,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "text": "Tiger Woods won the Masters.",
+        "labels": [
+          "person",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tiger Woods",
+            "label": "person",
+            "score": 0.9802015423774719,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "Masters",
+            "label": "event",
+            "score": 0.9334478378295898,
+            "start": 20,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Usain Bolt ran in the Olympics.",
+        "labels": [
+          "person",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Usain Bolt",
+            "label": "person",
+            "score": 0.9786949753761292,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Olympics",
+            "label": "event",
+            "score": 0.9324570298194885,
+            "start": 22,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Roger Federer retired from tennis.",
+        "labels": [
+          "person",
+          "sport"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Roger Federer",
+            "label": "person",
+            "score": 0.9762412905693054,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "tennis",
+            "label": "sport",
+            "score": 0.9833847284317017,
+            "start": 27,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "Shohei Ohtani plays for the Dodgers.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Shohei Ohtani",
+            "label": "person",
+            "score": 0.9901931881904602,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Dodgers",
+            "label": "organization",
+            "score": 0.9667631983757019,
+            "start": 28,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Patrick Mahomes leads the Chiefs.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Patrick Mahomes",
+            "label": "person",
+            "score": 0.9914364218711853,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Chiefs",
+            "label": "organization",
+            "score": 0.9693007469177246,
+            "start": 26,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "OpenAI released ChatGPT-5.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "OpenAI",
+            "label": "organization",
+            "score": 0.9426965713500977,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "ChatGPT-5",
+            "label": "item",
+            "score": 0.7459141612052917,
+            "start": 16,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Google launched Gemini AI.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9698103070259094,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "Apple announced the Vision Pro.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9509645700454712,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Vision Pro",
+            "label": "item",
+            "score": 0.8703746199607849,
+            "start": 20,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Microsoft acquired Activision.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.971217691898346,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Activision",
+            "label": "organization",
+            "score": 0.9620950818061829,
+            "start": 19,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Netflix added new features.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9647259712219238,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Spotify reached 500 million users.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Spotify",
+            "label": "organization",
+            "score": 0.9708225727081299,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Twitter became X.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Twitter",
+            "label": "organization",
+            "score": 0.9292587041854858,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Meta launched Threads.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Meta",
+            "label": "organization",
+            "score": 0.559513509273529,
+            "start": 0,
+            "end": 4
+          }
+        ]
+      },
+      {
+        "text": "NVIDIA stock hit record high.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "NVIDIA",
+            "label": "organization",
+            "score": 0.8577396273612976,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "Amazon Web Services expanded.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon Web Services",
+            "label": "organization",
+            "score": 0.9695409536361694,
+            "start": 0,
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "Yesterday, John Smith from IBM met with Sarah Johnson at Google HQ in Mountain View.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John Smith",
+            "label": "person",
+            "score": 0.9740538001060486,
+            "start": 11,
+            "end": 21
+          },
+          {
+            "text": "IBM",
+            "label": "organization",
+            "score": 0.9536884427070618,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "text": "Sarah Johnson",
+            "label": "person",
+            "score": 0.9665747880935669,
+            "start": 40,
+            "end": 53
+          },
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9323394894599915,
+            "start": 57,
+            "end": 63
+          },
+          {
+            "text": "Mountain View",
+            "label": "location",
+            "score": 0.9526249766349792,
+            "start": 70,
+            "end": 83
+          }
+        ]
+      },
+      {
+        "text": "The CEO of Tesla, Elon Musk, announced a new factory in Berlin, Germany.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.8787351846694946,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "text": "Elon Musk",
+            "label": "person",
+            "score": 0.9910280108451843,
+            "start": 18,
+            "end": 27
+          },
+          {
+            "text": "Berlin",
+            "label": "location",
+            "score": 0.8702008128166199,
+            "start": 56,
+            "end": 62
+          },
+          {
+            "text": "Germany",
+            "label": "location",
+            "score": 0.8660921454429626,
+            "start": 64,
+            "end": 71
+          }
+        ]
+      },
+      {
+        "text": "Apple's Tim Cook and Microsoft's Satya Nadella attended the conference in Davos.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9475435614585876,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Tim Cook",
+            "label": "person",
+            "score": 0.9820835590362549,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9704453349113464,
+            "start": 21,
+            "end": 30
+          },
+          {
+            "text": "Satya Nadella",
+            "label": "person",
+            "score": 0.9779142141342163,
+            "start": 33,
+            "end": 46
+          },
+          {
+            "text": "Davos",
+            "label": "location",
+            "score": 0.9705309867858887,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "text": "Dr. Anthony Fauci spoke about COVID-19 at the WHO meeting in Geneva.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Anthony Fauci",
+            "label": "person",
+            "score": 0.9688172936439514,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "WHO",
+            "label": "organization",
+            "score": 0.9864060282707214,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "text": "Geneva",
+            "label": "location",
+            "score": 0.9788895845413208,
+            "start": 61,
+            "end": 67
+          }
+        ]
+      },
+      {
+        "text": "Amazon founder Jeff Bezos purchased the Washington Post newspaper.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Jeff Bezos",
+            "label": "person",
+            "score": 0.9701579809188843,
+            "start": 15,
+            "end": 25
+          },
+          {
+            "text": "Washington Post",
+            "label": "organization",
+            "score": 0.9167880415916443,
+            "start": 40,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "text": "Facebook, now Meta, moved its headquarters from Menlo Park.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Facebook",
+            "label": "organization",
+            "score": 0.9731652140617371,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "text": "Meta",
+            "label": "organization",
+            "score": 0.906000018119812,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "text": "Menlo Park",
+            "label": "location",
+            "score": 0.9536328911781311,
+            "start": 48,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "The New York Times reported on events in Washington D.C.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The New York Times",
+            "label": "organization",
+            "score": 0.961551308631897,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "Washington D.C.",
+            "label": "location",
+            "score": 0.9021169543266296,
+            "start": 41,
+            "end": 56
+          }
+        ]
+      },
+      {
+        "text": "SpaceX launched a rocket from Cape Canaveral, Florida.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "SpaceX",
+            "label": "organization",
+            "score": 0.9525381326675415,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Cape Canaveral",
+            "label": "location",
+            "score": 0.9419803023338318,
+            "start": 30,
+            "end": 44
+          },
+          {
+            "text": "Florida",
+            "label": "location",
+            "score": 0.9052184820175171,
+            "start": 46,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "Toyota and Honda announced electric vehicle plans in Tokyo.",
+        "labels": [
+          "organization",
+          "location",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Toyota",
+            "label": "organization",
+            "score": 0.9591419100761414,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Honda",
+            "label": "organization",
+            "score": 0.9477429986000061,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "text": "Tokyo",
+            "label": "location",
+            "score": 0.9591903686523438,
+            "start": 53,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "Netflix, Disney+, and HBO Max are competing in Los Angeles.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9716604351997375,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "text": "Disney+",
+            "label": "organization",
+            "score": 0.9424068927764893,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "text": "HBO Max",
+            "label": "organization",
+            "score": 0.9547553062438965,
+            "start": 22,
+            "end": 29
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9821311235427856,
+            "start": 47,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "Call John.",
+        "labels": [
+          "person"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John",
+            "label": "person",
+            "score": 0.8815222382545471,
+            "start": 5,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "Buy milk.",
+        "labels": [
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": []
+      },
+      {
+        "text": "Go to Paris.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Paris",
+            "label": "location",
+            "score": 0.923894464969635,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Contact Microsoft.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9580893516540527,
+            "start": 8,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Meet at Starbucks.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.7369333505630493,
+            "start": 8,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Email Sarah.",
+        "labels": [
+          "person"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sarah",
+            "label": "person",
+            "score": 0.9678856730461121,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Visit London.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.892227053642273,
+            "start": 6,
+            "end": 12
+          }
+        ]
+      },
+      {
+        "text": "Use Google.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.8610873818397522,
+            "start": 4,
+            "end": 10
+          }
+        ]
+      },
+      {
+        "text": "Try Netflix.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9581578969955444,
+            "start": 4,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Order from Amazon.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9039412140846252,
+            "start": 11,
+            "end": 17
+          }
+        ]
+      }
+    ]
+  },
+  "gliner_multi-v2.1": {
+    "ner": [
+      {
+        "text": "John Smith works at Microsoft in Seattle.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John Smith",
+            "label": "person",
+            "score": 0.990032970905304,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9766528606414795,
+            "start": 20,
+            "end": 29
+          },
+          {
+            "text": "Seattle",
+            "label": "location",
+            "score": 0.9887455105781555,
+            "start": 33,
+            "end": 40
+          }
+        ]
+      },
+      {
+        "text": "Elon Musk announced new Tesla features.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Elon Musk",
+            "label": "person",
+            "score": 0.9935001730918884,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.9719684720039368,
+            "start": 24,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Dr. Sarah Johnson joined Harvard University.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Sarah Johnson",
+            "label": "person",
+            "score": 0.9706064462661743,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "Harvard University",
+            "label": "organization",
+            "score": 0.9825091361999512,
+            "start": 25,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Tim Cook presented at Apple's keynote.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tim Cook",
+            "label": "person",
+            "score": 0.9933052659034729,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9678305983543396,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Mark Zuckerberg founded Facebook in 2004.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Mark Zuckerberg",
+            "label": "person",
+            "score": 0.9951379895210266,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Facebook",
+            "label": "organization",
+            "score": 0.9852352142333984,
+            "start": 24,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Jeff Bezos stepped down from Amazon.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Jeff Bezos",
+            "label": "person",
+            "score": 0.9931288957595825,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9857938885688782,
+            "start": 29,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Sundar Pichai leads Google.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sundar Pichai",
+            "label": "person",
+            "score": 0.9893660545349121,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9854286313056946,
+            "start": 20,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "text": "Warren Buffett invested in Coca-Cola.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Warren Buffett",
+            "label": "person",
+            "score": 0.9869295358657837,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "Coca-Cola",
+            "label": "organization",
+            "score": 0.9681040644645691,
+            "start": 27,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Bill Gates donated to the WHO.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Bill Gates",
+            "label": "person",
+            "score": 0.991063117980957,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "WHO",
+            "label": "organization",
+            "score": 0.9688060879707336,
+            "start": 26,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Satya Nadella transformed Microsoft.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Satya Nadella",
+            "label": "person",
+            "score": 0.9849177002906799,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.964594304561615,
+            "start": 26,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "The conference is in New York City.",
+        "labels": [
+          "location",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The conference",
+            "label": "event",
+            "score": 0.5350157618522644,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "New York City",
+            "label": "location",
+            "score": 0.9724125266075134,
+            "start": 21,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Flight from London to Tokyo.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9238731861114502,
+            "start": 12,
+            "end": 18
+          },
+          {
+            "text": "Tokyo",
+            "label": "location",
+            "score": 0.896737277507782,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Meeting at the Paris office.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Paris office",
+            "label": "location",
+            "score": 0.7904951572418213,
+            "start": 15,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Vacation in the Bahamas.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Bahamas",
+            "label": "location",
+            "score": 0.7397762537002563,
+            "start": 16,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Headquarters moved to San Francisco.",
+        "labels": [
+          "location",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Headquarters",
+            "label": "organization",
+            "score": 0.6117761135101318,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "San Francisco",
+            "label": "location",
+            "score": 0.9849995970726013,
+            "start": 22,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Born in Chicago, raised in Boston.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chicago",
+            "label": "location",
+            "score": 0.9638792276382446,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "text": "Boston",
+            "label": "location",
+            "score": 0.9516710042953491,
+            "start": 27,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "The restaurant is on 5th Avenue.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "5th Avenue",
+            "label": "location",
+            "score": 0.9558426737785339,
+            "start": 21,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Traveling through Germany and France.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Germany",
+            "label": "location",
+            "score": 0.873431921005249,
+            "start": 18,
+            "end": 25
+          },
+          {
+            "text": "France",
+            "label": "location",
+            "score": 0.8040018677711487,
+            "start": 30,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "The beach in Miami is beautiful.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Miami",
+            "label": "location",
+            "score": 0.8613700270652771,
+            "start": 13,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Office located in downtown Manhattan.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "downtown Manhattan",
+            "label": "location",
+            "score": 0.9099164605140686,
+            "start": 18,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Buy iPhone and MacBook from Apple Store.",
+        "labels": [
+          "item",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "iPhone",
+            "label": "item",
+            "score": 0.9127338528633118,
+            "start": 4,
+            "end": 10
+          },
+          {
+            "text": "MacBook",
+            "label": "item",
+            "score": 0.9009448885917664,
+            "start": 15,
+            "end": 22
+          },
+          {
+            "text": "Apple Store",
+            "label": "organization",
+            "score": 0.9231539964675903,
+            "start": 28,
+            "end": 39
+          }
+        ]
+      },
+      {
+        "text": "The Tesla Model 3 is on sale.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tesla Model 3",
+            "label": "item",
+            "score": 0.8989458084106445,
+            "start": 4,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Order PlayStation 5 from Amazon.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "PlayStation 5",
+            "label": "item",
+            "score": 0.9527072310447693,
+            "start": 6,
+            "end": 19
+          },
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9373205900192261,
+            "start": 25,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Install Windows 11 on the laptop.",
+        "labels": [
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "laptop",
+            "label": "item",
+            "score": 0.5346960425376892,
+            "start": 26,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "The new Nike Air Max shoes.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Nike",
+            "label": "organization",
+            "score": 0.8131343722343445,
+            "start": 8,
+            "end": 12
+          }
+        ]
+      },
+      {
+        "text": "Samsung Galaxy S24 review.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Samsung Galaxy S24",
+            "label": "item",
+            "score": 0.7811900973320007,
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Bought a Rolex watch.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Rolex",
+            "label": "organization",
+            "score": 0.5494503974914551,
+            "start": 9,
+            "end": 14
+          }
+        ]
+      },
+      {
+        "text": "The IKEA furniture arrived.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "IKEA",
+            "label": "organization",
+            "score": 0.7466326951980591,
+            "start": 4,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "text": "Using Adobe Photoshop for editing.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": []
+      },
+      {
+        "text": "The Sony headphones are great.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sony",
+            "label": "organization",
+            "score": 0.9534816145896912,
+            "start": 4,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "text": "I met Sarah at Starbucks in New York.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sarah",
+            "label": "person",
+            "score": 0.9702060222625732,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.9167594313621521,
+            "start": 15,
+            "end": 24
+          },
+          {
+            "text": "New York",
+            "label": "location",
+            "score": 0.9696932435035706,
+            "start": 28,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Tom and Mary had dinner at the Italian restaurant in London.",
+        "labels": [
+          "person",
+          "restaurant",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tom and Mary",
+            "label": "person",
+            "score": 0.9365381598472595,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Italian restaurant",
+            "label": "restaurant",
+            "score": 0.9293032884597778,
+            "start": 31,
+            "end": 49
+          },
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9542260766029358,
+            "start": 53,
+            "end": 59
+          }
+        ]
+      },
+      {
+        "text": "Dr. Johnson prescribed medication at General Hospital.",
+        "labels": [
+          "person",
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Johnson",
+            "label": "person",
+            "score": 0.974640965461731,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "medication",
+            "label": "item",
+            "score": 0.6260782480239868,
+            "start": 23,
+            "end": 33
+          },
+          {
+            "text": "General Hospital",
+            "label": "organization",
+            "score": 0.9642933011054993,
+            "start": 37,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "CEO Lisa Su announced AMD's new chip.",
+        "labels": [
+          "person",
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Lisa Su",
+            "label": "person",
+            "score": 0.9773905873298645,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "text": "AMD",
+            "label": "organization",
+            "score": 0.9696099758148193,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "text": "new chip",
+            "label": "item",
+            "score": 0.681136429309845,
+            "start": 28,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Professor Zhang teaches at Stanford in California.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Professor Zhang",
+            "label": "person",
+            "score": 0.984416663646698,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Stanford",
+            "label": "organization",
+            "score": 0.950212836265564,
+            "start": 27,
+            "end": 35
+          },
+          {
+            "text": "California",
+            "label": "location",
+            "score": 0.9849380254745483,
+            "start": 39,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "text": "Chef Gordon Ramsay opened a restaurant in Las Vegas.",
+        "labels": [
+          "person",
+          "restaurant",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chef Gordon Ramsay",
+            "label": "person",
+            "score": 0.9585263729095459,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9912812113761902,
+            "start": 42,
+            "end": 51
+          }
+        ]
+      },
+      {
+        "text": "Athlete LeBron James signed with the Lakers.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "LeBron James",
+            "label": "person",
+            "score": 0.9864604473114014,
+            "start": 8,
+            "end": 20
+          },
+          {
+            "text": "Lakers",
+            "label": "organization",
+            "score": 0.9776085615158081,
+            "start": 37,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Author Stephen King lives in Maine.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Stephen King",
+            "label": "person",
+            "score": 0.9755908250808716,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "text": "Maine",
+            "label": "location",
+            "score": 0.9837912321090698,
+            "start": 29,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Singer Taylor Swift performed in Nashville.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Taylor Swift",
+            "label": "person",
+            "score": 0.9838167428970337,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "text": "Nashville",
+            "label": "location",
+            "score": 0.9835489988327026,
+            "start": 33,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "text": "Director Christopher Nolan filmed in Iceland.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Christopher Nolan",
+            "label": "person",
+            "score": 0.9768282175064087,
+            "start": 9,
+            "end": 26
+          },
+          {
+            "text": "Iceland",
+            "label": "location",
+            "score": 0.9833261370658875,
+            "start": 37,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "text": "Order sushi from Nobu restaurant.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "sushi",
+            "label": "food",
+            "score": 0.9146788120269775,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "text": "Nobu restaurant",
+            "label": "restaurant",
+            "score": 0.9362195730209351,
+            "start": 17,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "The pasta at Olive Garden was delicious.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "pasta",
+            "label": "food",
+            "score": 0.8430298566818237,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "text": "Olive Garden",
+            "label": "restaurant",
+            "score": 0.9647462964057922,
+            "start": 13,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Buy fresh salmon at Whole Foods.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "fresh salmon",
+            "label": "food",
+            "score": 0.7786829471588135,
+            "start": 4,
+            "end": 16
+          },
+          {
+            "text": "Whole Foods",
+            "label": "organization",
+            "score": 0.9681462645530701,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Try the burgers at Five Guys.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "burgers",
+            "label": "food",
+            "score": 0.8810845017433167,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "text": "Five Guys",
+            "label": "restaurant",
+            "score": 0.9620484113693237,
+            "start": 19,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "The pizza from Domino's arrived.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "pizza",
+            "label": "food",
+            "score": 0.8422961235046387,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "text": "Domino's",
+            "label": "restaurant",
+            "score": 0.8542602062225342,
+            "start": 15,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Coffee from Starbucks every morning.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Coffee",
+            "label": "food",
+            "score": 0.9270513653755188,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.9319319128990173,
+            "start": 12,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Tacos at Chipotle for lunch.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tacos",
+            "label": "food",
+            "score": 0.8807705044746399,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Chipotle",
+            "label": "restaurant",
+            "score": 0.8884394764900208,
+            "start": 9,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Ice cream from Ben & Jerry's.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Ice cream",
+            "label": "food",
+            "score": 0.9651974439620972,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Ben & Jerry's",
+            "label": "organization",
+            "score": 0.8814519643783569,
+            "start": 15,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "Chicken sandwich at Chick-fil-A.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chicken sandwich",
+            "label": "food",
+            "score": 0.938772976398468,
+            "start": 0,
+            "end": 16
+          },
+          {
+            "text": "Chick-fil-A",
+            "label": "restaurant",
+            "score": 0.9708378314971924,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Breakfast at IHOP.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Breakfast",
+            "label": "food",
+            "score": 0.7551642060279846,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "IHOP",
+            "label": "restaurant",
+            "score": 0.93863844871521,
+            "start": 13,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "The Olympics will be in Los Angeles.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The Olympics",
+            "label": "event",
+            "score": 0.9058926701545715,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9866791367530823,
+            "start": 24,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Super Bowl LVIII in Las Vegas.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Super Bowl LVIII",
+            "label": "event",
+            "score": 0.8894690871238708,
+            "start": 0,
+            "end": 16
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9719803929328918,
+            "start": 20,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Coachella festival in California.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Coachella festival",
+            "label": "event",
+            "score": 0.9264070987701416,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "California",
+            "label": "location",
+            "score": 0.9524510502815247,
+            "start": 22,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Comic-Con in San Diego.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Comic-Con",
+            "label": "event",
+            "score": 0.9256574511528015,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "San Diego",
+            "label": "location",
+            "score": 0.9330275654792786,
+            "start": 13,
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "The World Cup final in Qatar.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The World Cup final",
+            "label": "event",
+            "score": 0.8413366675376892,
+            "start": 0,
+            "end": 19
+          },
+          {
+            "text": "Qatar",
+            "label": "location",
+            "score": 0.9519480466842651,
+            "start": 23,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "Grammy Awards in Los Angeles.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Grammy Awards",
+            "label": "event",
+            "score": 0.9172435998916626,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9694459438323975,
+            "start": 17,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "SXSW conference in Austin.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "SXSW conference",
+            "label": "event",
+            "score": 0.8648388981819153,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Austin",
+            "label": "location",
+            "score": 0.9691276550292969,
+            "start": 19,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "CES in Las Vegas.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "CES",
+            "label": "event",
+            "score": 0.8924835324287415,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9545882940292358,
+            "start": 7,
+            "end": 16
+          }
+        ]
+      },
+      {
+        "text": "Fashion Week in Milan.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Milan",
+            "label": "location",
+            "score": 0.8685004711151123,
+            "start": 16,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Oktoberfest in Munich.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Oktoberfest",
+            "label": "event",
+            "score": 0.9536920785903931,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "Munich",
+            "label": "location",
+            "score": 0.9473960995674133,
+            "start": 15,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Michael Jordan played for the Chicago Bulls.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Michael Jordan",
+            "label": "person",
+            "score": 0.9935395121574402,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "Chicago Bulls",
+            "label": "organization",
+            "score": 0.9854381084442139,
+            "start": 30,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Lionel Messi joined Inter Miami.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Lionel Messi",
+            "label": "person",
+            "score": 0.9883500337600708,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Inter Miami",
+            "label": "organization",
+            "score": 0.9794487357139587,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Serena Williams won at Wimbledon.",
+        "labels": [
+          "person",
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Serena Williams",
+            "label": "person",
+            "score": 0.9856443405151367,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Wimbledon",
+            "label": "location",
+            "score": 0.9923404455184937,
+            "start": 23,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Tom Brady retired from the NFL.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tom Brady",
+            "label": "person",
+            "score": 0.9908039569854736,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "NFL",
+            "label": "organization",
+            "score": 0.9821919798851013,
+            "start": 27,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Cristiano Ronaldo signed with Al-Nassr.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Cristiano Ronaldo",
+            "label": "person",
+            "score": 0.9799554944038391,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "Al-Nassr",
+            "label": "organization",
+            "score": 0.9459677934646606,
+            "start": 30,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "text": "Tiger Woods won the Masters.",
+        "labels": [
+          "person",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tiger Woods",
+            "label": "person",
+            "score": 0.9905966520309448,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "Masters",
+            "label": "event",
+            "score": 0.96136075258255,
+            "start": 20,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Usain Bolt ran in the Olympics.",
+        "labels": [
+          "person",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Usain Bolt",
+            "label": "person",
+            "score": 0.9893414378166199,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Olympics",
+            "label": "event",
+            "score": 0.9790634512901306,
+            "start": 22,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Roger Federer retired from tennis.",
+        "labels": [
+          "person",
+          "sport"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Roger Federer",
+            "label": "person",
+            "score": 0.9913743138313293,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "tennis",
+            "label": "sport",
+            "score": 0.9796594977378845,
+            "start": 27,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "Shohei Ohtani plays for the Dodgers.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Shohei Ohtani",
+            "label": "person",
+            "score": 0.9857808947563171,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Dodgers",
+            "label": "organization",
+            "score": 0.9740678668022156,
+            "start": 28,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Patrick Mahomes leads the Chiefs.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Patrick Mahomes",
+            "label": "person",
+            "score": 0.9924746155738831,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Chiefs",
+            "label": "organization",
+            "score": 0.975307047367096,
+            "start": 26,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "OpenAI released ChatGPT-5.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "OpenAI",
+            "label": "organization",
+            "score": 0.9593484401702881,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "ChatGPT-5",
+            "label": "item",
+            "score": 0.7159013152122498,
+            "start": 16,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Google launched Gemini AI.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9912863373756409,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Gemini AI",
+            "label": "item",
+            "score": 0.6991357207298279,
+            "start": 16,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Apple announced the Vision Pro.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9867023825645447,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Vision Pro",
+            "label": "item",
+            "score": 0.9126684069633484,
+            "start": 20,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Microsoft acquired Activision.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9725440740585327,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Activision",
+            "label": "organization",
+            "score": 0.9288349747657776,
+            "start": 19,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Netflix added new features.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9641368985176086,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Spotify reached 500 million users.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Spotify",
+            "label": "organization",
+            "score": 0.9680440425872803,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Twitter became X.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Twitter",
+            "label": "organization",
+            "score": 0.9384595155715942,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Meta launched Threads.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Meta",
+            "label": "organization",
+            "score": 0.8162918090820312,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "text": "Threads",
+            "label": "organization",
+            "score": 0.6795034408569336,
+            "start": 14,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "NVIDIA stock hit record high.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "NVIDIA",
+            "label": "organization",
+            "score": 0.9589674472808838,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "Amazon Web Services expanded.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon Web Services",
+            "label": "organization",
+            "score": 0.9490357637405396,
+            "start": 0,
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "Yesterday, John Smith from IBM met with Sarah Johnson at Google HQ in Mountain View.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John Smith",
+            "label": "person",
+            "score": 0.9842198491096497,
+            "start": 11,
+            "end": 21
+          },
+          {
+            "text": "IBM",
+            "label": "organization",
+            "score": 0.9692785739898682,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "text": "Sarah Johnson",
+            "label": "person",
+            "score": 0.9841651916503906,
+            "start": 40,
+            "end": 53
+          },
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.8221566081047058,
+            "start": 57,
+            "end": 63
+          },
+          {
+            "text": "Mountain View",
+            "label": "location",
+            "score": 0.9779677391052246,
+            "start": 70,
+            "end": 83
+          }
+        ]
+      },
+      {
+        "text": "The CEO of Tesla, Elon Musk, announced a new factory in Berlin, Germany.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.977912962436676,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "text": "Elon Musk",
+            "label": "person",
+            "score": 0.9901130199432373,
+            "start": 18,
+            "end": 27
+          },
+          {
+            "text": "Berlin",
+            "label": "location",
+            "score": 0.9675166010856628,
+            "start": 56,
+            "end": 62
+          },
+          {
+            "text": "Germany",
+            "label": "location",
+            "score": 0.7225235104560852,
+            "start": 64,
+            "end": 71
+          }
+        ]
+      },
+      {
+        "text": "Apple's Tim Cook and Microsoft's Satya Nadella attended the conference in Davos.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9835661053657532,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Tim Cook",
+            "label": "person",
+            "score": 0.9842230677604675,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9849295020103455,
+            "start": 21,
+            "end": 30
+          },
+          {
+            "text": "Satya Nadella",
+            "label": "person",
+            "score": 0.9756121635437012,
+            "start": 33,
+            "end": 46
+          },
+          {
+            "text": "Davos",
+            "label": "location",
+            "score": 0.9890913963317871,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "text": "Dr. Anthony Fauci spoke about COVID-19 at the WHO meeting in Geneva.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Anthony Fauci",
+            "label": "person",
+            "score": 0.9752240180969238,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "WHO",
+            "label": "organization",
+            "score": 0.9833488464355469,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "text": "Geneva",
+            "label": "location",
+            "score": 0.9843228459358215,
+            "start": 61,
+            "end": 67
+          }
+        ]
+      },
+      {
+        "text": "Amazon founder Jeff Bezos purchased the Washington Post newspaper.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9443060755729675,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Jeff Bezos",
+            "label": "person",
+            "score": 0.9891449809074402,
+            "start": 15,
+            "end": 25
+          },
+          {
+            "text": "Washington Post",
+            "label": "organization",
+            "score": 0.8639599680900574,
+            "start": 40,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "text": "Facebook, now Meta, moved its headquarters from Menlo Park.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Facebook",
+            "label": "organization",
+            "score": 0.9660851359367371,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "text": "Meta",
+            "label": "organization",
+            "score": 0.9392743706703186,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "text": "Menlo Park",
+            "label": "location",
+            "score": 0.9912862181663513,
+            "start": 48,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "The New York Times reported on events in Washington D.C.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The New York Times",
+            "label": "organization",
+            "score": 0.9715260863304138,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "Washington D.C.",
+            "label": "location",
+            "score": 0.8420045375823975,
+            "start": 41,
+            "end": 56
+          }
+        ]
+      },
+      {
+        "text": "SpaceX launched a rocket from Cape Canaveral, Florida.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "SpaceX",
+            "label": "organization",
+            "score": 0.98054438829422,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Cape Canaveral",
+            "label": "location",
+            "score": 0.971445620059967,
+            "start": 30,
+            "end": 44
+          },
+          {
+            "text": "Florida",
+            "label": "location",
+            "score": 0.9536520838737488,
+            "start": 46,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "Toyota and Honda announced electric vehicle plans in Tokyo.",
+        "labels": [
+          "organization",
+          "location",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Toyota",
+            "label": "organization",
+            "score": 0.9802002906799316,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Honda",
+            "label": "organization",
+            "score": 0.963209867477417,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "text": "Tokyo",
+            "label": "location",
+            "score": 0.9897124767303467,
+            "start": 53,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "Netflix, Disney+, and HBO Max are competing in Los Angeles.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9858744144439697,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "text": "Disney+",
+            "label": "organization",
+            "score": 0.9532800316810608,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "text": "HBO Max",
+            "label": "organization",
+            "score": 0.9807946085929871,
+            "start": 22,
+            "end": 29
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9915662407875061,
+            "start": 47,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "Call John.",
+        "labels": [
+          "person"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John",
+            "label": "person",
+            "score": 0.7551528811454773,
+            "start": 5,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "Buy milk.",
+        "labels": [
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Buy milk",
+            "label": "item",
+            "score": 0.5735240578651428,
+            "start": 0,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "text": "Go to Paris.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Paris",
+            "label": "location",
+            "score": 0.9291291236877441,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Contact Microsoft.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9134466648101807,
+            "start": 8,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Meet at Starbucks.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.9039828181266785,
+            "start": 8,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Email Sarah.",
+        "labels": [
+          "person"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sarah",
+            "label": "person",
+            "score": 0.839942991733551,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Visit London.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9189441204071045,
+            "start": 6,
+            "end": 12
+          }
+        ]
+      },
+      {
+        "text": "Use Google.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.8627797365188599,
+            "start": 4,
+            "end": 10
+          }
+        ]
+      },
+      {
+        "text": "Try Netflix.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.8661214709281921,
+            "start": 4,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Order from Amazon.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.8506665229797363,
+            "start": 11,
+            "end": 17
+          }
+        ]
+      }
+    ]
+  },
+  "gliner_large-v2.1": {
+    "ner": [
+      {
+        "text": "John Smith works at Microsoft in Seattle.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John Smith",
+            "label": "person",
+            "score": 0.9954611659049988,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9929983615875244,
+            "start": 20,
+            "end": 29
+          },
+          {
+            "text": "Seattle",
+            "label": "location",
+            "score": 0.9959312081336975,
+            "start": 33,
+            "end": 40
+          }
+        ]
+      },
+      {
+        "text": "Elon Musk announced new Tesla features.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Elon Musk",
+            "label": "person",
+            "score": 0.9975848197937012,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.9914302229881287,
+            "start": 24,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Dr. Sarah Johnson joined Harvard University.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Sarah Johnson",
+            "label": "person",
+            "score": 0.9849246144294739,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "Harvard University",
+            "label": "organization",
+            "score": 0.9811866283416748,
+            "start": 25,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Tim Cook presented at Apple's keynote.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tim Cook",
+            "label": "person",
+            "score": 0.9959256649017334,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9942933320999146,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Mark Zuckerberg founded Facebook in 2004.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Mark Zuckerberg",
+            "label": "person",
+            "score": 0.9965285658836365,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Facebook",
+            "label": "organization",
+            "score": 0.9926272034645081,
+            "start": 24,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Jeff Bezos stepped down from Amazon.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Jeff Bezos",
+            "label": "person",
+            "score": 0.9953619837760925,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9934625625610352,
+            "start": 29,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Sundar Pichai leads Google.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sundar Pichai",
+            "label": "person",
+            "score": 0.9951179027557373,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9955626726150513,
+            "start": 20,
+            "end": 26
+          }
+        ]
+      },
+      {
+        "text": "Warren Buffett invested in Coca-Cola.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Warren Buffett",
+            "label": "person",
+            "score": 0.9961897730827332,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "Coca-Cola",
+            "label": "organization",
+            "score": 0.984157145023346,
+            "start": 27,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Bill Gates donated to the WHO.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Bill Gates",
+            "label": "person",
+            "score": 0.9961054921150208,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "WHO",
+            "label": "organization",
+            "score": 0.9765583872795105,
+            "start": 26,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Satya Nadella transformed Microsoft.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Satya Nadella",
+            "label": "person",
+            "score": 0.9854174256324768,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9902156591415405,
+            "start": 26,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "The conference is in New York City.",
+        "labels": [
+          "location",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The conference",
+            "label": "event",
+            "score": 0.9505617618560791,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "New York City",
+            "label": "location",
+            "score": 0.9676644802093506,
+            "start": 21,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Flight from London to Tokyo.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9307752251625061,
+            "start": 12,
+            "end": 18
+          },
+          {
+            "text": "Tokyo",
+            "label": "location",
+            "score": 0.9555882811546326,
+            "start": 22,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Meeting at the Paris office.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Paris office",
+            "label": "location",
+            "score": 0.9133164286613464,
+            "start": 15,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Vacation in the Bahamas.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Bahamas",
+            "label": "location",
+            "score": 0.7221231460571289,
+            "start": 16,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Headquarters moved to San Francisco.",
+        "labels": [
+          "location",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Headquarters",
+            "label": "organization",
+            "score": 0.8299379944801331,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "San Francisco",
+            "label": "location",
+            "score": 0.9591583609580994,
+            "start": 22,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Born in Chicago, raised in Boston.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chicago",
+            "label": "location",
+            "score": 0.9798138737678528,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "text": "Boston",
+            "label": "location",
+            "score": 0.9844628572463989,
+            "start": 27,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "The restaurant is on 5th Avenue.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "5th Avenue",
+            "label": "location",
+            "score": 0.9120181798934937,
+            "start": 21,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Traveling through Germany and France.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Germany",
+            "label": "location",
+            "score": 0.8558025360107422,
+            "start": 18,
+            "end": 25
+          },
+          {
+            "text": "France",
+            "label": "location",
+            "score": 0.8936995267868042,
+            "start": 30,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "The beach in Miami is beautiful.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The beach in Miami",
+            "label": "location",
+            "score": 0.8363333344459534,
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Office located in downtown Manhattan.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Office",
+            "label": "location",
+            "score": 0.5811255574226379,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "downtown Manhattan",
+            "label": "location",
+            "score": 0.9006850719451904,
+            "start": 18,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Buy iPhone and MacBook from Apple Store.",
+        "labels": [
+          "item",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "iPhone",
+            "label": "item",
+            "score": 0.9418519139289856,
+            "start": 4,
+            "end": 10
+          },
+          {
+            "text": "MacBook",
+            "label": "item",
+            "score": 0.9492142796516418,
+            "start": 15,
+            "end": 22
+          },
+          {
+            "text": "Apple Store",
+            "label": "location",
+            "score": 0.9450623989105225,
+            "start": 28,
+            "end": 39
+          }
+        ]
+      },
+      {
+        "text": "The Tesla Model 3 is on sale.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.9354378581047058,
+            "start": 4,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "Order PlayStation 5 from Amazon.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "PlayStation 5",
+            "label": "item",
+            "score": 0.9647986888885498,
+            "start": 6,
+            "end": 19
+          },
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9917482137680054,
+            "start": 25,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Install Windows 11 on the laptop.",
+        "labels": [
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "laptop",
+            "label": "item",
+            "score": 0.5153610706329346,
+            "start": 26,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "The new Nike Air Max shoes.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Nike",
+            "label": "organization",
+            "score": 0.9312393665313721,
+            "start": 8,
+            "end": 12
+          }
+        ]
+      },
+      {
+        "text": "Samsung Galaxy S24 review.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Samsung Galaxy S24",
+            "label": "item",
+            "score": 0.6878310441970825,
+            "start": 0,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Bought a Rolex watch.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Rolex watch",
+            "label": "item",
+            "score": 0.8172000646591187,
+            "start": 9,
+            "end": 20
+          }
+        ]
+      },
+      {
+        "text": "The IKEA furniture arrived.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "IKEA",
+            "label": "organization",
+            "score": 0.9712914228439331,
+            "start": 4,
+            "end": 8
+          },
+          {
+            "text": "furniture",
+            "label": "item",
+            "score": 0.737343430519104,
+            "start": 9,
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Using Adobe Photoshop for editing.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Adobe Photoshop",
+            "label": "organization",
+            "score": 0.5216981172561646,
+            "start": 6,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "The Sony headphones are great.",
+        "labels": [
+          "item",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sony",
+            "label": "organization",
+            "score": 0.9803950190544128,
+            "start": 4,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "text": "I met Sarah at Starbucks in New York.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sarah",
+            "label": "person",
+            "score": 0.977501630783081,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.9813806414604187,
+            "start": 15,
+            "end": 24
+          },
+          {
+            "text": "New York",
+            "label": "location",
+            "score": 0.9814609885215759,
+            "start": 28,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Tom and Mary had dinner at the Italian restaurant in London.",
+        "labels": [
+          "person",
+          "restaurant",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tom and Mary",
+            "label": "person",
+            "score": 0.9502907395362854,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Italian restaurant",
+            "label": "restaurant",
+            "score": 0.9474563598632812,
+            "start": 31,
+            "end": 49
+          },
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9848982691764832,
+            "start": 53,
+            "end": 59
+          }
+        ]
+      },
+      {
+        "text": "Dr. Johnson prescribed medication at General Hospital.",
+        "labels": [
+          "person",
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Johnson",
+            "label": "person",
+            "score": 0.9943015575408936,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "medication",
+            "label": "item",
+            "score": 0.8708814382553101,
+            "start": 23,
+            "end": 33
+          },
+          {
+            "text": "General Hospital",
+            "label": "organization",
+            "score": 0.9804571270942688,
+            "start": 37,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "CEO Lisa Su announced AMD's new chip.",
+        "labels": [
+          "person",
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Lisa Su",
+            "label": "person",
+            "score": 0.987177848815918,
+            "start": 4,
+            "end": 11
+          },
+          {
+            "text": "AMD",
+            "label": "organization",
+            "score": 0.9905720353126526,
+            "start": 22,
+            "end": 25
+          },
+          {
+            "text": "new chip",
+            "label": "item",
+            "score": 0.7693910002708435,
+            "start": 28,
+            "end": 36
+          }
+        ]
+      },
+      {
+        "text": "Professor Zhang teaches at Stanford in California.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Professor Zhang",
+            "label": "person",
+            "score": 0.9948509335517883,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Stanford",
+            "label": "organization",
+            "score": 0.9920788407325745,
+            "start": 27,
+            "end": 35
+          },
+          {
+            "text": "California",
+            "label": "location",
+            "score": 0.9956454038619995,
+            "start": 39,
+            "end": 49
+          }
+        ]
+      },
+      {
+        "text": "Chef Gordon Ramsay opened a restaurant in Las Vegas.",
+        "labels": [
+          "person",
+          "restaurant",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chef Gordon Ramsay",
+            "label": "person",
+            "score": 0.9813345670700073,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9873923659324646,
+            "start": 42,
+            "end": 51
+          }
+        ]
+      },
+      {
+        "text": "Athlete LeBron James signed with the Lakers.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "LeBron James",
+            "label": "person",
+            "score": 0.9921492338180542,
+            "start": 8,
+            "end": 20
+          },
+          {
+            "text": "Lakers",
+            "label": "organization",
+            "score": 0.944295346736908,
+            "start": 37,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Author Stephen King lives in Maine.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Stephen King",
+            "label": "person",
+            "score": 0.9835265278816223,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "text": "Maine",
+            "label": "location",
+            "score": 0.9931433200836182,
+            "start": 29,
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Singer Taylor Swift performed in Nashville.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Taylor Swift",
+            "label": "person",
+            "score": 0.9425966739654541,
+            "start": 7,
+            "end": 19
+          },
+          {
+            "text": "Nashville",
+            "label": "location",
+            "score": 0.9887730479240417,
+            "start": 33,
+            "end": 42
+          }
+        ]
+      },
+      {
+        "text": "Director Christopher Nolan filmed in Iceland.",
+        "labels": [
+          "person",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Director Christopher Nolan",
+            "label": "person",
+            "score": 0.8672151565551758,
+            "start": 0,
+            "end": 26
+          },
+          {
+            "text": "Iceland",
+            "label": "location",
+            "score": 0.9704638719558716,
+            "start": 37,
+            "end": 44
+          }
+        ]
+      },
+      {
+        "text": "Order sushi from Nobu restaurant.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "sushi",
+            "label": "food",
+            "score": 0.9636756777763367,
+            "start": 6,
+            "end": 11
+          },
+          {
+            "text": "Nobu restaurant",
+            "label": "restaurant",
+            "score": 0.9868549108505249,
+            "start": 17,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "The pasta at Olive Garden was delicious.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The pasta",
+            "label": "food",
+            "score": 0.9135620594024658,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Olive Garden",
+            "label": "restaurant",
+            "score": 0.9880998134613037,
+            "start": 13,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Buy fresh salmon at Whole Foods.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "fresh salmon",
+            "label": "food",
+            "score": 0.8716599941253662,
+            "start": 4,
+            "end": 16
+          },
+          {
+            "text": "Whole Foods",
+            "label": "organization",
+            "score": 0.9847700595855713,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Try the burgers at Five Guys.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "burgers",
+            "label": "food",
+            "score": 0.9050537943840027,
+            "start": 8,
+            "end": 15
+          },
+          {
+            "text": "Five Guys",
+            "label": "restaurant",
+            "score": 0.9963443875312805,
+            "start": 19,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "The pizza from Domino's arrived.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "pizza",
+            "label": "food",
+            "score": 0.9413748383522034,
+            "start": 4,
+            "end": 9
+          },
+          {
+            "text": "Domino's",
+            "label": "restaurant",
+            "score": 0.7487707734107971,
+            "start": 15,
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Coffee from Starbucks every morning.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Coffee",
+            "label": "food",
+            "score": 0.9717195630073547,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Starbucks",
+            "label": "organization",
+            "score": 0.982626736164093,
+            "start": 12,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Tacos at Chipotle for lunch.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tacos",
+            "label": "food",
+            "score": 0.974670946598053,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Chipotle",
+            "label": "restaurant",
+            "score": 0.9969868063926697,
+            "start": 9,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Ice cream from Ben & Jerry's.",
+        "labels": [
+          "food",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Ice cream",
+            "label": "food",
+            "score": 0.935476541519165,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Ben & Jerry's",
+            "label": "organization",
+            "score": 0.7306822538375854,
+            "start": 15,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "Chicken sandwich at Chick-fil-A.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Chicken sandwich",
+            "label": "food",
+            "score": 0.98199063539505,
+            "start": 0,
+            "end": 16
+          },
+          {
+            "text": "Chick-fil-A",
+            "label": "restaurant",
+            "score": 0.9964961409568787,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Breakfast at IHOP.",
+        "labels": [
+          "food",
+          "restaurant"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Breakfast",
+            "label": "food",
+            "score": 0.9500409364700317,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "IHOP",
+            "label": "restaurant",
+            "score": 0.983994722366333,
+            "start": 13,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "The Olympics will be in Los Angeles.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The Olympics",
+            "label": "event",
+            "score": 0.961106538772583,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9911062121391296,
+            "start": 24,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Super Bowl LVIII in Las Vegas.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Super Bowl LVIII",
+            "label": "event",
+            "score": 0.9723466038703918,
+            "start": 0,
+            "end": 16
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9874640703201294,
+            "start": 20,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Coachella festival in California.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Coachella festival",
+            "label": "event",
+            "score": 0.9714348316192627,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "California",
+            "label": "location",
+            "score": 0.9937366247177124,
+            "start": 22,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Comic-Con in San Diego.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Comic-Con",
+            "label": "event",
+            "score": 0.9849392175674438,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "San Diego",
+            "label": "location",
+            "score": 0.9838036298751831,
+            "start": 13,
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "The World Cup final in Qatar.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The World Cup final",
+            "label": "event",
+            "score": 0.9114479422569275,
+            "start": 0,
+            "end": 19
+          },
+          {
+            "text": "Qatar",
+            "label": "location",
+            "score": 0.9757013320922852,
+            "start": 23,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "Grammy Awards in Los Angeles.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Grammy Awards",
+            "label": "event",
+            "score": 0.9782978892326355,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.9864069819450378,
+            "start": 17,
+            "end": 28
+          }
+        ]
+      },
+      {
+        "text": "SXSW conference in Austin.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "SXSW conference",
+            "label": "event",
+            "score": 0.8814390897750854,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Austin",
+            "label": "location",
+            "score": 0.9919499158859253,
+            "start": 19,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "CES in Las Vegas.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "CES",
+            "label": "event",
+            "score": 0.9792822599411011,
+            "start": 0,
+            "end": 3
+          },
+          {
+            "text": "Las Vegas",
+            "label": "location",
+            "score": 0.9851481914520264,
+            "start": 7,
+            "end": 16
+          }
+        ]
+      },
+      {
+        "text": "Fashion Week in Milan.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Fashion Week",
+            "label": "event",
+            "score": 0.9689502120018005,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Milan",
+            "label": "location",
+            "score": 0.9797365069389343,
+            "start": 16,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Oktoberfest in Munich.",
+        "labels": [
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Oktoberfest",
+            "label": "event",
+            "score": 0.9733210206031799,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "Munich",
+            "label": "location",
+            "score": 0.9860052466392517,
+            "start": 15,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Michael Jordan played for the Chicago Bulls.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Michael Jordan",
+            "label": "person",
+            "score": 0.9961769580841064,
+            "start": 0,
+            "end": 14
+          },
+          {
+            "text": "Chicago Bulls",
+            "label": "organization",
+            "score": 0.9444441795349121,
+            "start": 30,
+            "end": 43
+          }
+        ]
+      },
+      {
+        "text": "Lionel Messi joined Inter Miami.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Lionel Messi",
+            "label": "person",
+            "score": 0.9944666028022766,
+            "start": 0,
+            "end": 12
+          },
+          {
+            "text": "Inter Miami",
+            "label": "organization",
+            "score": 0.9661781787872314,
+            "start": 20,
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Serena Williams won at Wimbledon.",
+        "labels": [
+          "person",
+          "event",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Serena Williams",
+            "label": "person",
+            "score": 0.9941796064376831,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Wimbledon",
+            "label": "location",
+            "score": 0.9910518527030945,
+            "start": 23,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "Tom Brady retired from the NFL.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tom Brady",
+            "label": "person",
+            "score": 0.9952292442321777,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "NFL",
+            "label": "organization",
+            "score": 0.9879202842712402,
+            "start": 27,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Cristiano Ronaldo signed with Al-Nassr.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Cristiano Ronaldo",
+            "label": "person",
+            "score": 0.9965457320213318,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "Al-Nassr",
+            "label": "organization",
+            "score": 0.9854694604873657,
+            "start": 30,
+            "end": 38
+          }
+        ]
+      },
+      {
+        "text": "Tiger Woods won the Masters.",
+        "labels": [
+          "person",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tiger Woods",
+            "label": "person",
+            "score": 0.9958272576332092,
+            "start": 0,
+            "end": 11
+          },
+          {
+            "text": "Masters",
+            "label": "event",
+            "score": 0.9651976227760315,
+            "start": 20,
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Usain Bolt ran in the Olympics.",
+        "labels": [
+          "person",
+          "event"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Usain Bolt",
+            "label": "person",
+            "score": 0.9961133003234863,
+            "start": 0,
+            "end": 10
+          },
+          {
+            "text": "Olympics",
+            "label": "event",
+            "score": 0.969890832901001,
+            "start": 22,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Roger Federer retired from tennis.",
+        "labels": [
+          "person",
+          "sport"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Roger Federer",
+            "label": "person",
+            "score": 0.9890095591545105,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "tennis",
+            "label": "sport",
+            "score": 0.9913619160652161,
+            "start": 27,
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "Shohei Ohtani plays for the Dodgers.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Shohei Ohtani",
+            "label": "person",
+            "score": 0.9931086301803589,
+            "start": 0,
+            "end": 13
+          },
+          {
+            "text": "Dodgers",
+            "label": "organization",
+            "score": 0.9546346664428711,
+            "start": 28,
+            "end": 35
+          }
+        ]
+      },
+      {
+        "text": "Patrick Mahomes leads the Chiefs.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Patrick Mahomes",
+            "label": "person",
+            "score": 0.9927741289138794,
+            "start": 0,
+            "end": 15
+          },
+          {
+            "text": "Chiefs",
+            "label": "organization",
+            "score": 0.9555377960205078,
+            "start": 26,
+            "end": 32
+          }
+        ]
+      },
+      {
+        "text": "OpenAI released ChatGPT-5.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "OpenAI",
+            "label": "organization",
+            "score": 0.9972770810127258,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "ChatGPT-5",
+            "label": "item",
+            "score": 0.9234920144081116,
+            "start": 16,
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Google launched Gemini AI.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9839184284210205,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "Apple announced the Vision Pro.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9959824085235596,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Vision Pro",
+            "label": "item",
+            "score": 0.9160829186439514,
+            "start": 20,
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "Microsoft acquired Activision.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9759731292724609,
+            "start": 0,
+            "end": 9
+          },
+          {
+            "text": "Activision",
+            "label": "organization",
+            "score": 0.9676471948623657,
+            "start": 19,
+            "end": 29
+          }
+        ]
+      },
+      {
+        "text": "Netflix added new features.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9906339645385742,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Spotify reached 500 million users.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Spotify",
+            "label": "organization",
+            "score": 0.9836106300354004,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Twitter became X.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Twitter",
+            "label": "organization",
+            "score": 0.9600443243980408,
+            "start": 0,
+            "end": 7
+          }
+        ]
+      },
+      {
+        "text": "Meta launched Threads.",
+        "labels": [
+          "organization",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Meta",
+            "label": "organization",
+            "score": 0.7981398701667786,
+            "start": 0,
+            "end": 4
+          },
+          {
+            "text": "Threads",
+            "label": "item",
+            "score": 0.7509362697601318,
+            "start": 14,
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "NVIDIA stock hit record high.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "NVIDIA",
+            "label": "organization",
+            "score": 0.9779027104377747,
+            "start": 0,
+            "end": 6
+          }
+        ]
+      },
+      {
+        "text": "Amazon Web Services expanded.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon Web Services",
+            "label": "organization",
+            "score": 0.9537328481674194,
+            "start": 0,
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "Yesterday, John Smith from IBM met with Sarah Johnson at Google HQ in Mountain View.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John Smith",
+            "label": "person",
+            "score": 0.9835498332977295,
+            "start": 11,
+            "end": 21
+          },
+          {
+            "text": "IBM",
+            "label": "organization",
+            "score": 0.9872084259986877,
+            "start": 27,
+            "end": 30
+          },
+          {
+            "text": "Sarah Johnson",
+            "label": "person",
+            "score": 0.9795524477958679,
+            "start": 40,
+            "end": 53
+          },
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.9511063694953918,
+            "start": 57,
+            "end": 63
+          },
+          {
+            "text": "Mountain View",
+            "label": "location",
+            "score": 0.984096884727478,
+            "start": 70,
+            "end": 83
+          }
+        ]
+      },
+      {
+        "text": "The CEO of Tesla, Elon Musk, announced a new factory in Berlin, Germany.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Tesla",
+            "label": "organization",
+            "score": 0.9897897839546204,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "text": "Elon Musk",
+            "label": "person",
+            "score": 0.9969209432601929,
+            "start": 18,
+            "end": 27
+          },
+          {
+            "text": "Berlin",
+            "label": "location",
+            "score": 0.9847186207771301,
+            "start": 56,
+            "end": 62
+          },
+          {
+            "text": "Germany",
+            "label": "location",
+            "score": 0.8429011702537537,
+            "start": 64,
+            "end": 71
+          }
+        ]
+      },
+      {
+        "text": "Apple's Tim Cook and Microsoft's Satya Nadella attended the conference in Davos.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Apple",
+            "label": "organization",
+            "score": 0.9924887418746948,
+            "start": 0,
+            "end": 5
+          },
+          {
+            "text": "Tim Cook",
+            "label": "person",
+            "score": 0.9938873648643494,
+            "start": 8,
+            "end": 16
+          },
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9887707233428955,
+            "start": 21,
+            "end": 30
+          },
+          {
+            "text": "Satya Nadella",
+            "label": "person",
+            "score": 0.990867018699646,
+            "start": 33,
+            "end": 46
+          },
+          {
+            "text": "Davos",
+            "label": "location",
+            "score": 0.98533034324646,
+            "start": 74,
+            "end": 79
+          }
+        ]
+      },
+      {
+        "text": "Dr. Anthony Fauci spoke about COVID-19 at the WHO meeting in Geneva.",
+        "labels": [
+          "person",
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Dr. Anthony Fauci",
+            "label": "person",
+            "score": 0.990559458732605,
+            "start": 0,
+            "end": 17
+          },
+          {
+            "text": "WHO",
+            "label": "organization",
+            "score": 0.9856129288673401,
+            "start": 46,
+            "end": 49
+          },
+          {
+            "text": "Geneva",
+            "label": "location",
+            "score": 0.9943109750747681,
+            "start": 61,
+            "end": 67
+          }
+        ]
+      },
+      {
+        "text": "Amazon founder Jeff Bezos purchased the Washington Post newspaper.",
+        "labels": [
+          "person",
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9598285555839539,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Jeff Bezos",
+            "label": "person",
+            "score": 0.9916558265686035,
+            "start": 15,
+            "end": 25
+          },
+          {
+            "text": "Washington Post",
+            "label": "organization",
+            "score": 0.8479259014129639,
+            "start": 40,
+            "end": 55
+          }
+        ]
+      },
+      {
+        "text": "Facebook, now Meta, moved its headquarters from Menlo Park.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Facebook",
+            "label": "organization",
+            "score": 0.9634591937065125,
+            "start": 0,
+            "end": 8
+          },
+          {
+            "text": "Meta",
+            "label": "organization",
+            "score": 0.9404032826423645,
+            "start": 14,
+            "end": 18
+          },
+          {
+            "text": "Menlo Park",
+            "label": "location",
+            "score": 0.9790801405906677,
+            "start": 48,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "The New York Times reported on events in Washington D.C.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "The New York Times",
+            "label": "organization",
+            "score": 0.99134761095047,
+            "start": 0,
+            "end": 18
+          },
+          {
+            "text": "Washington D.C.",
+            "label": "location",
+            "score": 0.8177531957626343,
+            "start": 41,
+            "end": 56
+          }
+        ]
+      },
+      {
+        "text": "SpaceX launched a rocket from Cape Canaveral, Florida.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "SpaceX",
+            "label": "organization",
+            "score": 0.9927021265029907,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Cape Canaveral",
+            "label": "location",
+            "score": 0.9700614213943481,
+            "start": 30,
+            "end": 44
+          },
+          {
+            "text": "Florida",
+            "label": "location",
+            "score": 0.7771593928337097,
+            "start": 46,
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "Toyota and Honda announced electric vehicle plans in Tokyo.",
+        "labels": [
+          "organization",
+          "location",
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Toyota",
+            "label": "organization",
+            "score": 0.9871723055839539,
+            "start": 0,
+            "end": 6
+          },
+          {
+            "text": "Honda",
+            "label": "organization",
+            "score": 0.9783047437667847,
+            "start": 11,
+            "end": 16
+          },
+          {
+            "text": "Tokyo",
+            "label": "location",
+            "score": 0.9908411502838135,
+            "start": 53,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "Netflix, Disney+, and HBO Max are competing in Los Angeles.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.9858381152153015,
+            "start": 0,
+            "end": 7
+          },
+          {
+            "text": "Disney+",
+            "label": "organization",
+            "score": 0.9829098582267761,
+            "start": 9,
+            "end": 16
+          },
+          {
+            "text": "HBO Max",
+            "label": "organization",
+            "score": 0.978192925453186,
+            "start": 22,
+            "end": 29
+          },
+          {
+            "text": "Los Angeles",
+            "label": "location",
+            "score": 0.981936514377594,
+            "start": 47,
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "Call John.",
+        "labels": [
+          "person"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "John",
+            "label": "person",
+            "score": 0.9887131452560425,
+            "start": 5,
+            "end": 9
+          }
+        ]
+      },
+      {
+        "text": "Buy milk.",
+        "labels": [
+          "item"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "milk",
+            "label": "item",
+            "score": 0.8509699106216431,
+            "start": 4,
+            "end": 8
+          }
+        ]
+      },
+      {
+        "text": "Go to Paris.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Paris",
+            "label": "location",
+            "score": 0.9764718413352966,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Contact Microsoft.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Microsoft",
+            "label": "organization",
+            "score": 0.9100391268730164,
+            "start": 8,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Meet at Starbucks.",
+        "labels": [
+          "organization",
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Starbucks",
+            "label": "location",
+            "score": 0.8935320973396301,
+            "start": 8,
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Email Sarah.",
+        "labels": [
+          "person"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Sarah",
+            "label": "person",
+            "score": 0.995088517665863,
+            "start": 6,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Visit London.",
+        "labels": [
+          "location"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "London",
+            "label": "location",
+            "score": 0.9610525965690613,
+            "start": 6,
+            "end": 12
+          }
+        ]
+      },
+      {
+        "text": "Use Google.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Google",
+            "label": "organization",
+            "score": 0.968342661857605,
+            "start": 4,
+            "end": 10
+          }
+        ]
+      },
+      {
+        "text": "Try Netflix.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Netflix",
+            "label": "organization",
+            "score": 0.8412164449691772,
+            "start": 4,
+            "end": 11
+          }
+        ]
+      },
+      {
+        "text": "Order from Amazon.",
+        "labels": [
+          "organization"
+        ],
+        "threshold": 0.5,
+        "expected": [
+          {
+            "text": "Amazon",
+            "label": "organization",
+            "score": 0.9544364809989929,
+            "start": 11,
+            "end": 17
+          }
+        ]
+      }
+    ]
+  }
+}
