@@ -24,7 +24,7 @@ pip install gliner2-onnx
 ```python
 from gliner2_onnx import GLiNER2ONNXRuntime
 
-runtime = GLiNER2ONNXRuntime.from_pretrained("lmoe/gliner2-large-v1-onnx")
+runtime = GLiNER2ONNXRuntime.from_pretrained("lmo3/gliner2-large-v1-onnx")
 
 entities = runtime.extract_entities(
     "John works at Google in Seattle",
@@ -42,7 +42,7 @@ entities = runtime.extract_entities(
 ```python
 from gliner2_onnx import GLiNER2ONNXRuntime
 
-runtime = GLiNER2ONNXRuntime.from_pretrained("lmoe/gliner2-large-v1-onnx")
+runtime = GLiNER2ONNXRuntime.from_pretrained("lmo3/gliner2-large-v1-onnx")
 
 # Single-label classification
 result = runtime.classify(
@@ -67,7 +67,7 @@ To use CUDA for GPU acceleration:
 
 ```python
 runtime = GLiNER2ONNXRuntime.from_pretrained(
-    "lmoe/gliner2-large-v1-onnx",
+    "lmo3/gliner2-large-v1-onnx",
     providers=["CUDAExecutionProvider", "CPUExecutionProvider"]
 )
 ```
@@ -78,7 +78,7 @@ Both FP32 and FP16 models are supported. Only the requested precision is downloa
 
 ```python
 runtime = GLiNER2ONNXRuntime.from_pretrained(
-    "lmoe/gliner2-large-v1-onnx",
+    "lmo3/gliner2-large-v1-onnx",
     precision="fp16"
 )
 ```
@@ -89,8 +89,8 @@ Pre-exported ONNX models:
 
 | Model | HuggingFace |
 |-------|-------------|
-| gliner2-large-v1 | [lmoe/gliner2-large-v1-onnx](https://huggingface.co/lmoe/gliner2-large-v1-onnx) |
-| gliner2-multi-v1 | [lmoe/gliner2-multi-v1-onnx](https://huggingface.co/lmoe/gliner2-multi-v1-onnx) |
+| gliner2-large-v1 | [lmo3/gliner2-large-v1-onnx](https://huggingface.co/lmo3/gliner2-large-v1-onnx) |
+| gliner2-multi-v1 | [lmo3/gliner2-multi-v1-onnx](https://huggingface.co/lmo3/gliner2-multi-v1-onnx) |
 
 Note: `gliner2-base-v1` is not supported (uses a different architecture).
 
